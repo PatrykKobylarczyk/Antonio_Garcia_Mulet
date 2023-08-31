@@ -1,7 +1,9 @@
 import React from "react";
-import { biography } from "@/data/biographyData";
+import { biographyPL, biographyEN } from "@/data/biographyData";
 
-const Biography = () => {
+const Biography = ({language}:any) => {
+  const biography = language === 'EN' ? biographyEN : biographyPL;
+
   const biographyParagraphs = biography.map((paraghraph, i): any => {
     return <p key={i} className="my-6">{paraghraph}</p>;
   });

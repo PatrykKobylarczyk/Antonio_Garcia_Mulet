@@ -71,7 +71,7 @@ const Home = () => {
             <h2 className="font-bold text-lg ml-8 md:ml-16 ">
               {language === "EN" ? "Biography" : "Biografia"}
             </h2>
-            <Biography/>
+            <Biography language={language}/>
             <h2 className="font-bold text-lg ml-8 md:ml-16 mb-10">
               {language === "EN" ? "Gallery" : "Galeria"}
             </h2>
