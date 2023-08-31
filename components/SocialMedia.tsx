@@ -1,19 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { SiCodewars } from "react-icons/si";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
     <ul className="flex gap-2 justify-center md:justify-start">
-      <Link href="https://www.linkedin.com/in/patrykkobylarczyk/">
-        <FaLinkedinIn size={"18px"} />
+      <Link href="https://www.instagram.com/antonio_garcia_mulet/" target='_blank'>
+        <BsInstagram size={"18px"} />
       </Link>
-      <Link href="https://github.com/PatrykKobylarczyk/">
-        <FaGithub size={"21px"} />
-      </Link>
-      <Link href="https://www.codewars.com/users/PatrykKobylarczyk">
-        <SiCodewars size={"18px"} />
+      <Link href="https://www.facebook.com/antonio.garciamulet" target='_blank'>
+        <FaFacebookSquare size={"21px"} />
       </Link>
     </ul>
   );

@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../assets/images/profile2.jpg";
+import profile from "../assets/images/profile.jpg";
 import SocialMedia from "@/components/SocialMedia";
 import About from "@/components/About";
 import ContactButtons from "@/components/ContactButtons";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Languages from "@/components/Languages";
-import Hobby from "@/components/Hobby";
-import Experience from "@/components/Experience";
-import Bookcase from "@/components/Bookcase";
+import Artworks from "@/components/Artworks";
 import { langEN, langPL } from "@/data/langPack";
+import PersonalExhibitions from "@/components/PersonalExhibitions";
+import GroupExhibitions from "@/components/GroupExhibitions";
+import Biography from "@/components/Biography";
+import Gallery from "@/components/Gallery";
 
 interface ILang {
+  title: string;
   about_paragraph_1: string;
   about_paragraph_2: string;
-  about_paragraph_3: string;
 }
 
 const Home = () => {
@@ -38,10 +37,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Patryk Kobylarczyk | CV</title>
+        <title>Antonio Garcia Mulet | Artist | Painter</title>
         <meta
           name="description"
-          content="Curriculum Vitae | Patryk Kobylarczyk | Frontend developer"
+          content="CAntonio Garcia Mulet | Artist | Painter"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -61,45 +60,41 @@ const Home = () => {
             <div className="w-full md:h-[80vh] bg-gray-100 p-16 flex flex-col justify-center gap-12">
               <SocialMedia />
               <About lang={lang} />
-              <ContactButtons />
+              <ContactButtons lang={lang}/>
             </div>
           </div>
         </section>
 
         {/* Section Projects&Skills */}
         <section className="grid grid-cols-1 md:grid-cols-2 mb-20">
-          <div className="flex flex-col pt-10">
-            <h2 className="font-bold text-lg ml-8 md:ml-16">
-              {language === "EN" ? "Projects" : "Projekty"}
-            </h2>
-            <Projects language={language} />
-            <h2 className="font-bold text-lg ml-8 md:ml-16 mt-10">
-              {language === "EN" ? "Experience" : "Doświadczenie"}
-            </h2>
-            <Experience language={language} />
-          </div>
           <div className="w-full pt-10">
             <h2 className="font-bold text-lg ml-8 md:ml-16 ">
-              {language === "EN" ? "Skills" : "Umiejętności"}
+              {language === "EN" ? "Biography" : "Biografia"}
             </h2>
-            <Skills />
-            <h2 className="font-bold text-lg ml-8 md:ml-16 ">
-              {language === "EN" ? "Languages" : "Języki"}
+            <Biography/>
+            <h2 className="font-bold text-lg ml-8 md:ml-16 mb-10">
+              {language === "EN" ? "Gallery" : "Galeria"}
             </h2>
-            <Languages/>
-            <h2 className="font-bold text-lg ml-8 md:ml-16 ">
-              {language === "EN" ? "Hobby" : "Zainteresowania"}
+            <Gallery/>
+          </div>
+          <div className="flex flex-col pt-10">
+            <h2 className="font-bold text-lg ml-8 md:ml-16 mb-3">
+              {language === "EN" ? "Personal Exhibitions" : "Wystawy personalne"}
             </h2>
-            <Hobby language={language} />
+            <PersonalExhibitions language={language} />
+            <h2 className="font-bold text-lg ml-8 md:ml-16 my-10">
+              {language === "EN" ? "Group Exhibitions" : "Wystawy grupowe"}
+            </h2>
+            <GroupExhibitions language={language} />
           </div>
         </section>
 
         {/* Section Bookcase */}
         <section className="relative w-full bg-gray-100 px-8 lg:px-20 pt-20">
           <h2 className="font-bold text-lg  md:ml-8 mb-8">
-            {language === "EN" ? "Bookcase" : "Biblioteczka"}
+            {language === "EN" ? "Artworks" : "Dzieła"}
           </h2>
-          <Bookcase />
+          <Artworks/>
         </section>
         <section className="relative w-full bg-gray-100 px-8 lg:px-20 py-20">
           <button

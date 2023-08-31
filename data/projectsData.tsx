@@ -1,183 +1,521 @@
-import {
-  SiFirebase,
-  SiGatsby,
-  SiGraphql,
-  SiMui,
-  SiNextdotjs,
-  SiReact,
-  SiSass,
-  SiTailwindcss,
-  SiTypescript,
-  SiAxios,
-  SiFramer
-} from "react-icons/si";
-import { BsStripe } from "react-icons/bs";
-import { HiOutlineChartSquareBar } from "react-icons/hi";
-import { AiOutlineForm } from "react-icons/ai";
+export const personalExhibitions = [
+  {
+    id: "01",
+    date: "1970",
+    descriptionPL: "Galería Le Soleil Dans La Tete, Paryż",
+    descriptionEN: "Galería Le Soleil Dans La Tete, Paris",
+  },
 
-export const projectsData = [
   {
-    id: 1,
-    name: "Dashboard",
-    date: "02/2023-03/2023",
-    titlePL: "Dashboard",
-    titleEN: "Dashboard.",
+    id: "02",
+    date: "1972",
+    descriptionPL: "Galería Le Soleil Dans La Tete, Paryż",
+    descriptionEN: "Galería Le Soleil Dans La Tete, Paris",
+  },
+
+  {
+    id: "03",
+    date: "1973",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+
+  {
+    id: "04",
+    date: "1974",
+    descriptionPL: "Galería Le Soleil Dans La Tête, Paryż",
+    descriptionEN: "Galería Le Soleil Dans La Tête, Paris",
+  },
+  {
+    id: "05",
+    date: "1975",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+  {
+    id: "06",
+    date: "1976",
+    descriptionPL: "Galerie de la Culture, Prieuré de Vivoin",
+    descriptionEN: "Galerie de la Culture, Prieuré de Vivoin",
+  },
+  {
+    id: "07",
+    date: "1977",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+  {
+    id: "08",
+    date: "1977",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+  {
+    id: "09",
+    date: "1980",
+    descriptionPL: "Galería Lucernaire Fórum, Paryż",
+    descriptionEN: "Galería Lucernaire Fórum, Paris",
+  },
+  {
+    id: "10",
+    date: "1983",
+    descriptionPL: "Galería Jaquester, Paryż",
+    descriptionEN: "Galería Jaquester, Paris",
+  },
+  {
+    id: "11",
+    date: "1985",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+  {
+    id: "12",
+    date: "1985",
+    descriptionPL: "Abbaye de Saint-Savin-Sur-Gartempe",
+    descriptionEN: "Abbaye de Saint-Savin-Sur-Gartempe",
+  },
+  {
+    id: "13",
+    date: "1985",
+    descriptionPL: "Galerie Jaquester, Paryż",
+    descriptionEN: "Galerie Jaquester, Paris",
+  },
+  {
+    id: "14",
+    date: "1988",
+    descriptionPL: "Galería Ynganzo, Madryt",
+    descriptionEN: "Galería Ynganzo, Madrid",
+  },
+  {
+    id: "15",
+    date: "1989",
+    descriptionPL: "Galería Jaquester, Paryż",
+    descriptionEN: "Galería Jaquester, Paris",
+  },
+  {
+    id: "16",
+    date: "1991",
+    descriptionPL: "Fiac 91, Galería Jaquester, Paryż",
+    descriptionEN: "Fiac 91, Galería Jaquester, Paris",
+  },
+  {
+    id: "17",
+    date: "1992",
+    descriptionPL: "Galería Jaquester, Paryż",
+    descriptionEN: "Galería Jaquester, Paris",
+  },
+  {
+    id: "18",
+    date: "1995",
     descriptionPL:
-      "Celem projektu było odtworzenie Dashboardu wzorując się na projekcie znalezionym na Behance. Do obsługi wykresów zaimplementowałem bibliotekę charts.js, do logowania Firebase Authentication. Do przechowywania danych połączyłem aplikację z Bazą danych Firestore. Formularze obsługuje bibliotek React-hook-form.",
+      "C.A.C de Noyers-Sur-Sere. Retrospectiva, Regard sur 25 années de création",
     descriptionEN:
-      "The aim of the project was to recreate the Dashboard based on the project found on Behance. I implemented the charts.js library to handle charts, Firebase Authentication to log in. I connected the application to the Firestore Database to store data. Forms are supported by React-hook-form libraries.",
-    stack: [
-      { name: "Next", icon: <SiNextdotjs /> },
-      { name: "Typescript", icon: <SiTypescript /> },
-      { name: "Firebase", icon: <SiFirebase /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "Charts JS", icon: <HiOutlineChartSquareBar /> },
-      { name: "React hook form", icon: <AiOutlineForm /> },
-    ],
-    links: [
+      "C.A.C de Noyers-Sur-Sere. Retrospectiva, Regard sur 25 années de création",
+  },
+];
+
+export const groupExhibitions = [
+  {
+    id: "01",
+    date: "1971",
+    exhibitions: [
       {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/dashboard-next-tailwind",
+        descriptionPL: "Prix Victor Choquet, Musée de la Monnaie, Paryż",
+        descriptionEN: "Prix Victor Choquet, Musée de la Monnaie, Paris",
       },
       {
-        name: "live",
-        link: "https://dashboard-next-tailwind-liart.vercel.app/",
+        descriptionPL: "Salón Grands et Jeunes d’aujourd’hui, Paryż",
+        descriptionEN: "Salón Grands et Jeunes d’aujourd’hui, Paryż",
+      },
+      {
+        descriptionPL: "Salón de Réalites Nuvelles, Paryż",
+        descriptionEN: "Salón de Réalites Nuvelles, Paris",
+      },
+      {
+        descriptionPL: "Maison des Arts et Loisirs de Laon",
+        descriptionEN: "Maison des Arts et Loisirs de Laon",
+      },
+      {
+        descriptionPL:
+          "Salon National des Arts Plastiques des Finances, Clermond Ferrand",
+        descriptionEN:
+          "Salon National des Arts Plastiques des Finances, Clermond Ferrand",
+      },
+      {
+        descriptionPL: "Mois des Arts Palstique, Bagnolet",
+        descriptionEN: "Mois des Arts Palstique, Bagnolet",
       },
     ],
   },
   {
-    id: 2,
-    name: "Fishky",
-    date: "02/2023-03/2023",
-    titlePL: "Popularne fiszki",
-    titleEN: "Popular Flashcards.",
-    descriptionPL:
-      "Aplikacja z popularnymi fiszkami do nauki języków lub cokolwiek sobie wymarzysz.",
-    descriptionEN:
-      "An app with popular flashcards for learning languages or whatever category you can think of. ",
-    stack: [
-      { name: "Next", icon: <SiNextdotjs /> },
-      { name: "Typescript", icon: <SiTypescript /> },
-      { name: "Firebase", icon: <SiFirebase /> },
-      { name: "Framer motion", icon: <SiFramer /> },
-      { name: "React hook form", icon: <AiOutlineForm /> },
-      { name: "Sass", icon: <SiSass /> },
-    ],
-    links: [
+    id: "02",
+    date: "1972",
+    exhibitions: [
       {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/fishky-v2",
+        descriptionPL:
+          "Salon Grands et Jeunes d’Aujourd’hui, Grand Palais, Paryż",
+        descriptionEN:
+          "Salon Grands et Jeunes d’Aujourd’hui, Grand Palais, Paris",
       },
       {
-        name: "live",
-        link: "https://fishky-v2.vercel.app",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Duo Milonga",
-    date: "12/2022-01/2023",
-    titlePL: "Strona internetowa zespołu muzycznego.",
-    titleEN: "Music group website.",
-    descriptionPL:
-      "Głównym celem była gra zdjęciami oraz możliwość słuchania muzyki.",
-    descriptionEN:
-      "The main goals were to play with pictures and to be able to listen to music.",
-    stack: [
-      { name: "Gatsby", icon: <SiGatsby /> },
-      { name: "GraphQL", icon: <SiGraphql /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "Framer motion", icon: <SiFramer /> },
-    ],
-    links: [
-      {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/duo-milonga",
+        descriptionPL: "Salon National des Arts Palstiques des Finances, Lille",
+        descriptionEN: "Salon National des Arts Palstiques des Finances, Lille",
       },
       {
-        name: "live",
-        link: "https://duomilonga.pl/",
+        descriptionPL: "Hommage su Peuple Espagnol et á sa Culture",
+        descriptionEN: "Hommage su Peuple Espagnol et á sa Culture",
+      },
+      {
+        descriptionPL: "Service Culturel de Drancy",
+        descriptionEN: "Service Culturel de Drancy",
+      },
+      {
+        descriptionPL: "4a Binnale Morgan’s Paint, Ravenna, Włochy",
+        descriptionEN: "4a Binnale Morgan’s Paint, Ravenna, Italy",
+      },
+      {
+        descriptionPL:
+          "3a Festival d’Art Plastiques de la Ville de Luchon, Aspectos de l’Art Actuel, Alençon",
+        descriptionEN:
+          "3a Festival d’Art Plastiques de la Ville de Luchon, Aspectos de l’Art Actuel, Alençon",
       },
     ],
   },
   {
-    id: 4,
-    name: "Netflix clone",
-    date: "11/2022-12/2022",
-    titlePL: "Klon Platformy Netflix.",
-    titleEN: "Netflix clone.",
-    descriptionPL:
-      "Głównym celem było połączenie aplikacji z Firebase, podłączenie płatności, odwzorowanie oryginalnej strony.",
-    descriptionEN:
-      "The main goals were connection to Firebase, possibility of payment, mapping the original.",
-    stack: [
-      { name: "Next JS", icon: <SiNextdotjs /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "Firebase", icon: <SiFirebase /> },
-      { name: "MUI", icon: <SiMui /> },
-      { name: "Stripe", icon: <BsStripe /> },
-    ],
-    links: [
+    id: "03",
+    date: "1973",
+    exhibitions: [
       {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/Netflix",
+        descriptionPL: "Galería Il Giorno, Sediola, Włochy",
+        descriptionEN: "Galería Il Giorno, Sediola, Italy",
       },
       {
-        name: "live",
-        link: "https://netflix-peach-ten.vercel.app/",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "Weather App",
-    date: "07/2022",
-    titlePL: "Aplikacja pogodowa.",
-    titleEN: "Weather App.",
-    descriptionPL:
-      "Aplikacja pogodowa wykorzystująca dane z serwisu OpenWeatherMap. Wpisz nazwę miasta i sprawdź aktualną pogodę, jak również na następny tydzień.",
-    descriptionEN:
-      "Weather app using data from OpenWeatherMap. Write a city name and check actual weather and forecast for following week.",
-    stack: [
-      { name: "React", icon: <SiReact /> },
-      { name: "Sass", icon: <SiSass /> },
-      { name: "Axios", icon: <SiAxios /> },
-    ],
-    links: [
-      {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/weather-app",
+        descriptionPL: "Salon des Réalités Nouvelles, Paryż",
+        descriptionEN: "Salon des Réalités Nouvelles, Paris",
       },
       {
-        name: "live",
-        link: "https://weather-app-patrykkobylarczyk.vercel.app/",
+        descriptionPL:
+          "Salon Grands et Jeunes d’Aujourd’hui, Grand Palais, Paryż",
+        descriptionEN:
+          "Salon Grands et Jeunes d’Aujourd’hui, Grand Palais, Paris",
+      },
+      {
+        descriptionPL: "4a Biennale de Zaragoza, Hiszpania",
+        descriptionEN: "4a Biennale de Zaragoza, Spain",
+      },
+      {
+        descriptionPL:
+          "Miró 80 (Tributo), Escuela de arquitectura, Palma de Mallorca",
+        descriptionEN:
+          "Miró 80 (Tributo), Escuela de arquitectura, Palma de Mallorca",
       },
     ],
   },
   {
-    id: 6,
-    name: "Pixel art App",
-    date: "06/2022",
-    titlePL: "Pixel art App.",
-    titleEN: "Pixel art App.",
-    descriptionPL:
-      "Jest to moja pierwsza aplikacja - pixel art drawing editor. Dynamicznie konfiguruj wymiary panelu rysunkowego, pokoloruj piksele według własnych upodobań i wyeksportuj gotowy element jako obraz PNG.",
-    descriptionEN:
-      "This is my first App - pixel art drawing editor in React. Dynamically set up drawing panel dimensions, color the pixels to your liking and export your finished piece as a PNG sprite.",
-    stack: [
-      { name: "React", icon: <SiReact /> },
-      { name: "Sass", icon: <SiSass /> },
-  
-    ],
-    links: [
+    id: "04",
+    date: "1974",
+    exhibitions: [
       {
-        name: "github",
-        link: "https://github.com/PatrykKobylarczyk/pixel-art",
+        descriptionPL: "2a Biennale d’Art Contemporain, Alençon",
+        descriptionEN: "2a Biennale d’Art Contemporain, Alençon",
       },
       {
-        name: "live",
-        link: "https://patrykkobylarczyk.github.io/pixel-art/",
+        descriptionPL: "Club Financier de Genéve en Madryt",
+        descriptionEN: "Club Financier de Genéve en Madrid",
+      },
+      {
+        descriptionPL: "Galerie Hyspacys, Paryż",
+        descriptionEN: "Galerie Hyspacys, Paris",
+      },
+      {
+        descriptionPL: "2a Mostra Internazionale di Pittura, Michetti, Włochy",
+        descriptionEN: "2a Mostra Internazionale di Pittura, Michetti, Italy",
+      },
+    ],
+  },
+  {
+    id: "05",
+    date: "1975",
+    exhibitions: [
+      {
+        descriptionPL:
+          "L’Art vivant contre la Peine de Mort, Foyer du Théatre d’Orsay, Paryż",
+        descriptionEN:
+          "L’Art vivant contre la Peine de Mort, Foyer du Théatre d’Orsay, Paris",
+      },
+      {
+        descriptionPL:
+          "Libertés d’Expression et de Craéation, Palais des Sports M. thorez, Vitry",
+        descriptionEN:
+          "Libertés d’Expression et de Craéation, Palais des Sports M. thorez, Vitry",
+      },
+      {
+        descriptionPL:
+          "Premier Salon de la Critique, La Galerie, Esplanade de la Défense",
+        descriptionEN:
+          "Premier Salon de la Critique, La Galerie, Esplanade de la Défense",
+      },
+    ],
+  },
+  {
+    id: "06",
+    date: "1976",
+    exhibitions: [
+      {
+        descriptionPL: "Salon de Mai, Paryż",
+        descriptionEN: "Salon de Mai, Paris",
+      },
+      {
+        descriptionPL: "30 Espagnols, Galerie Suillerot, Paryż",
+        descriptionEN: "30 Espagnols, Galerie Suillerot, Paris",
+      },
+      {
+        descriptionPL:
+          "Les Baliseurs, Galerie Isabelle Lemaigre Dubreuil, Paryż",
+        descriptionEN:
+          "Les Baliseurs, Galerie Isabelle Lemaigre Dubreuil, Paris",
+      },
+      {
+        descriptionPL: "30 Crèateurs, exposición itinerante en Francia, Paryż",
+        descriptionEN: "30 Crèateurs, exposición itinerante en Francia, Paris",
+      },
+      {
+        descriptionPL: "FIAC 76, Grand Palais, Paryż",
+        descriptionEN: "FIAC 76, Grand Palais, Paris",
+      },
+      {
+        descriptionPL:
+          "Maison de la Culture et des Loisirs présente: Le Soleil dans la Tête",
+        descriptionEN:
+          "Maison de la Culture et des Loisirs présente: Le Soleil dans la Tête",
+      },
+    ],
+  },
+  {
+    id: "07",
+    date: "1977",
+    exhibitions: [
+      {
+        descriptionPL: "Auto Portraits, Galería Le Soleil dans la Tête, Paryż",
+        descriptionEN: "Auto Portraits, Galería Le Soleil dans la Tête, Paris",
+      },
+      {
+        descriptionPL: "FIAC 77, Grand Palais, Paryż",
+        descriptionEN: "FIAC 77, Grand Palais, Paris",
+      },
+      {
+        descriptionPL: "Les Artistes Espagnoles de l’Ecole de Paryż,",
+        descriptionEN: "Les Artistes Espagnoles de l’Ecole de Paris",
+      },
+      {
+        descriptionPL: "Gallería Galos, Toulouse",
+        descriptionEN: "Gallería Galos, Toulouse",
+      },
+    ],
+  },
+  {
+    id: "08",
+    date: "1978",
+    exhibitions: [
+      {
+        descriptionPL: "Peintres et Sculpteurs Espagnols Contemporains",
+        descriptionEN: "Peintres et Sculpteurs Espagnols Contemporains",
+      },
+      {
+        descriptionPL:
+          "Maison des Arts del Centre d’Action Culturelle de Montbéliard",
+        descriptionEN:
+          "Maison des Arts del Centre d’Action Culturelle de Montbéliard",
+      },
+    ],
+  },
+  {
+    id: "09",
+    date: "1980",
+    exhibitions: [
+      {
+        descriptionPL:
+          "60 Artistes pour un Musée, Centre Culturel du Mexique, Paryż",
+        descriptionEN:
+          "60 Artistes pour un Musée, Centre Culturel du Mexique, Paris",
+      },
+      {
+        descriptionPL: "Peintres et Sculpteurs Espagnols, Vernissieux, Lyon",
+        descriptionEN: "Peintres et Sculpteurs Espagnols, Vernissieux, Lyon",
+      },
+      {
+        descriptionPL: "Boomerang, Saint Savin sur Gartempe",
+        descriptionEN: "Boomerang, Saint Savin sur Gartempe",
+      },
+    ],
+  },
+  {
+    id: "10",
+    date: "1981",
+    exhibitions: [
+      {
+        descriptionPL: "Esparce Cardin (Ligue Nationale contre le Cancer)",
+        descriptionEN: "Esparce Cardin (Ligue Nationale contre le Cancer)",
+      },
+      {
+        descriptionPL: "Le dessin Contemporain, Musée de la SEITA, Paryż",
+        descriptionEN: "Le dessin Contemporain, Musée de la SEITA, Paris",
+      },
+      {
+        descriptionPL: "(Exposición itinérante USA, Canadá, ...)",
+        descriptionEN: "(Exposición itinérante USA, Canadá, ...)",
+      },
+    ],
+  },
+  {
+    id: "11",
+    date: "1982",
+    exhibitions: [
+      {
+        descriptionPL: "Peintres et Sculpteurs étrangers residant a Paryż",
+        descriptionEN: "Peintres et Sculpteurs étrangers residant a Paris",
+      },
+      {
+        descriptionPL: "MJC de Belleville, Paryż",
+        descriptionEN: "MJC de Belleville, Paris",
+      },
+      {
+        descriptionPL:
+          "Art Catalán Contemporain, Centre Culturel Pierre Bayle, Besançon",
+        descriptionEN:
+          "Art Catalán Contemporain, Centre Culturel Pierre Bayle, Besançon",
+      },
+    ],
+  },
+  {
+    id: "12",
+    date: "1983",
+    exhibitions: [
+      {
+        descriptionPL:
+          "Aspects de la Peinture Contemporaine, Musée d’Art Moderne, Troyes",
+        descriptionEN:
+          "Aspects de la Peinture Contemporaine, Musée d’Art Moderne, Troyes",
+      },
+      {
+        descriptionPL: "Salon de Mai, Paryż",
+        descriptionEN: "Salon de Mai, Paryż",
+      },
+    ],
+  },
+  {
+    id: "13",
+    date: "1984",
+    exhibitions: [
+      {
+        descriptionPL: "Peinture Contemporaine, Espace Belleville, Paryż",
+        descriptionEN: "Peinture Contemporaine, Espace Belleville, Paris",
+      },
+    ],
+  },
+  {
+    id: "14",
+    date: "1985",
+    exhibitions: [
+      {
+        descriptionPL: "Parcours, MJC de Belleville, Paryż",
+        descriptionEN: "Parcours, MJC de Belleville, Paris",
+      },
+    ],
+  },
+  {
+    id: "15",
+    date: "1987",
+    exhibitions: [
+      {
+        descriptionPL: "SAGA, Grand Palais, Paryż",
+        descriptionEN: "SAGA, Grand Palais, Paris",
+      },
+      {
+        descriptionPL: "",
+        descriptionEN: "",
+      },
+      {
+        descriptionPL: "",
+        descriptionEN: "",
+      },
+    ],
+  },
+  {
+    id: "16",
+    date: "1988",
+    exhibitions: [
+      {
+        descriptionPL: "SArtistes Espagnols de Paris, Expace Belleville, Paryż",
+        descriptionEN: "Artistes Espagnols de Paris, Expace Belleville, Paris",
+      },
+      {
+        descriptionPL: "Artistes Espagnols de Paris, Galerie Greca, Barcelona",
+        descriptionEN: "Artistes Espagnols de Paris, Galerie Greca, Barcelona",
+      },
+      {
+        descriptionPL: "Forum d’Art Plastiques en Ile-de-France, Saint-Cloud",
+        descriptionEN: "Forum d’Art Plastiques en Ile-de-France, Saint-Cloud",
+      },
+      {
+        descriptionPL: "Salon d’Octobre de Brive",
+        descriptionEN: "Salon d’Octobre de Brive",
+      },
+    ],
+  },
+  {
+    id: "16",
+    date: "1989",
+    exhibitions: [
+      {
+        descriptionPL:
+          "Face à face, Arts primitifs-Arts Aujourd’hui, Abbaye de Saint-Savin",
+        descriptionEN:
+          "Face à face, Arts primitifs-Arts Aujourd’hui, Abbaye de Saint-Savin",
+      },
+    ],
+  },
+  {
+    id: "17",
+    date: "1990",
+    exhibitions: [
+      {
+        descriptionPL:
+          "S9 Peintres de Barcelone, Abbaye des Prémontrés, Pont-à-Mousson",
+        descriptionEN:
+          "9 Peintres de Barcelone, Abbaye des Prémontrés, Pont-à-Mousson",
+      },
+    ],
+  },
+  {
+    id: "18",
+    date: "1991",
+    exhibitions: [
+      {
+        descriptionPL: "Pour saluer le dessin, Museo Ingres, Montauban",
+        descriptionEN: "Pour saluer le dessin, Museo Ingres, Montauban",
+      },
+    ],
+  },
+  {
+    id: "19",
+    date: "1992",
+    exhibitions: [
+      {
+        descriptionPL:
+          "Galería Jaquester: Exposition collettive sur le thème du Paravent, Artistas españoles de la Escuela de Paris, Zaragoza",
+        descriptionEN:
+          "Galería Jaquester: Exposition collettive sur le thème du Paravent, Artistas españoles de la Escuela de Paris, Zaragoza",
+      },
+    ],
+  },
+  {
+    id: "20",
+    date: "1995",
+    exhibitions: [
+      {
+        descriptionPL: "Art Catalan Contemporain, Montpellier",
+        descriptionEN: "PArt Catalan Contemporain, Montpellier",
       },
     ],
   },
