@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/profile2.jpg";
 import SocialMedia from "@/components/SocialMedia";
 import About from "@/components/About";
 import ContactButtons from "@/components/ContactButtons";
