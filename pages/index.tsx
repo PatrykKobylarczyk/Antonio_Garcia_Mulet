@@ -48,8 +48,8 @@ const Home = () => {
       <main className="w full flex flex-col ">
         {/* Section About */}
         <section>
-          <div className=" w-full lg:h-[80vh] grid grid-cols-1 lg:grid-cols-2">
-            <div className="relative w-full h-[60vh] lg:h-[80vh]">
+          <div className=" w-full lg:h-[90vh] grid grid-cols-1 lg:grid-cols-2">
+            <div className="relative w-full h-[60vh] lg:h-[90vh]">
               <Image
                 className="md:absolute position h-full"
                 src={profile}
@@ -57,7 +57,7 @@ const Home = () => {
                 priority
               />
             </div>
-            <div className="w-full md:h-[80vh] bg-gray-100 p-16 flex flex-col justify-center gap-12">
+            <div className="w-full md:h-[90vh] bg-gray-100 p-16 flex flex-col justify-center gap-10">
               <SocialMedia />
               <About lang={lang} />
               <ContactButtons lang={lang}/>
