@@ -19,7 +19,7 @@ interface ILang {
 }
 
 const Home = () => {
-  const [language, setLanguage] = useState<string>("EN");
+  const [language, setLanguage] = useState<string>("PL");
   const [lang, setLang] = useState<ILang>(langEN);
 
   const handleChooseLanguage = () => {
